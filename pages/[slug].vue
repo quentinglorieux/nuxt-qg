@@ -45,7 +45,7 @@ const {
   path,
   () => {
     return $directus
-      .items('pages')
+      .items('Pages')
       .readByQuery({ filter: { slug: { _eq: params.slug } }, limit: 1 })
   },
   {
@@ -54,7 +54,7 @@ const {
   }
 )
 
-useMeta({
+useHead({
   title: page.value.title,
 })
 </script>

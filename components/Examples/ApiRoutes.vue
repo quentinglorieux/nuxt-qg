@@ -49,8 +49,7 @@ async function sayHello() {
   loading.value = true
   const { data } = await useFetch('/api/hello', {
     params: {
-       name: name.value,
-      //name: 'quentin', this works but name.value doesnt ?
+      name: name.value,
     },
     // The useFetch composable caches the response, you can disable that by passing initalCache: false as an option. Make sure you check out all the documentation for it.
     initialCache: false,

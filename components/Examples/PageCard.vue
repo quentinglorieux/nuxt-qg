@@ -49,7 +49,7 @@ const props = defineProps({
     default: '',
   },
   translations: {
-    type: Array,
+    type: Object,
     default: '',
   },
 
